@@ -28,11 +28,10 @@ public class GoogleMapsService {
         }
 
         return String.format(
-                "https://www.google.com/maps/dir/?api=1&origin=%f,%f&destination=%f,%f%s",
-                origin.getLatitude(), origin.getLongitude(),
-                destination.getLatitude(), destination.getLongitude(),
-                waypoints.toString()
-        );
+    "https://www.google.com/maps/dir/?api=1&origin=%f,%f&destination=%f,%f&travelmode=driving",
+    origin.getLatitude(), origin.getLongitude(),
+    destination.getLatitude(), destination.getLongitude()
+);
     }
 
     public static class Coordinate {
