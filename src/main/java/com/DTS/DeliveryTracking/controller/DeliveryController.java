@@ -24,7 +24,7 @@ public class DeliveryController {
         } catch (IllegalArgumentException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
-            return ResponseEntity.internalServerError().body("An unexpected error occurred.");
+            return ResponseEntity.internalServerError().body("An unexpected error occurred");
         }
     }
 }
