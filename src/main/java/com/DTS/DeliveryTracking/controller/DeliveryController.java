@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/maps")
+@RequestMapping("/api")
 public class DeliveryController {
 
     private final GoogleMapsService googleMapsService;
